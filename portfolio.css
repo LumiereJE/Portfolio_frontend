@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0 auto;
+}
+.sec {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.sec_0 {
+  background-color: black;
+}
+.sec_1 {
+  height: auto;
+}
+.sec_2 {
+  /* background-color: rgb(214, 196, 179); */
+  width: 60%;
+}
+.sec_3 {
+  /* background-color: rgb(207, 231, 213); */
+  border-top: 1px solid;
+}
+.sec_4 {
+  background-color: rgb(220, 220, 220);
+  height: 300px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+}
+p {
+  font-family: "GowunDodum-Regular";
+}
+
+/* ////////////////////////////////////////// */
+
+header {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  line-height: 100px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.logo {
+  float: left;
+  padding: 0 30px;
+  font-size: 24px;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+.logo:hover {
+  color: rgb(248, 48, 82);
+}
+.menu {
+  float: right;
+  font-weight: 900;
+}
+.menu > li {
+  float: left;
+  padding-right: 30px;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.menu li:hover {
+  color: rgb(248, 48, 82);
+  /* background-color: black; */
+}
+
+/* //////////////sec_0////////////////////////////// */
+.sec_1 {
+  position: relative;
+  width: 40%;
+  min-width: 400px;
+}
+
+.svg_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* dasharray(점선 길이), dashoffset(점선 어디부터 시작할지)이랑 
+  수치 똑같으면 화면에서 사라짐 */
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 0;
+  animation: ani 5s linear;
+}
+@keyframes ani {
+  0% {
+    stroke-dashoffset: 2500;
+  }
+  50% {
+    /* stroke-dashoffset: 0; */
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* //////////////sec_1 info ////////////////////////////// */
+.info_text > p {
+  font-size: 22px;
+  font-weight: 600px;
+}
+.title {
+  color: gray;
+  font-weight: 900;
+  margin: 50px 0;
+  padding-left: 20px;
+  line-height: 30px;
+
+  border: 5px solid black;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.title > p:nth-child(1) {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
+.edu_box {
+  margin-bottom: 20px;
+}
+.kakao_talk_0 {
+  width: 30px;
+  transform: translate(0px, -4px);
+}
+.per > a {
+  display: block;
+  transition: all 0.3s;
+}
+.per > a:hover {
+  color: rgb(248, 48, 82);
+}
+.per > a:hover svg {
+  color: rgb(248, 48, 82);
+}
+.per > a > svg {
+  transform: translate(0px, 30%);
+}
+
+/* //////////////sec_2 skill ////////////////////////////// */
+
+.skill_container {
+  display: flex;
+  /* gap: 100px; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.skill_container > li {
+  width: calc(100% / 3);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sec_2 img {
+  width: 100px;
+  height: 100px;
+  /* background-color: orange; */
+}
+.bar_box {
+  width: 100px;
+  height: 7px;
+  background-color: gray;
+  margin: 0 auto;
+
+  overflow: hidden;
+  position: relative;
+}
+.bar_slide {
+  /* width: 100%; */
+  height: 7px;
+
+  position: absolute;
+  top: 0;
+  left: -99%;
+  background-color: black;
+}
+.skill_score {
+  font-size: 18px;
+  font-weight: 900;
+  /* text-align: right; */
+  text-indent: 65px;
+}
+/* ------------------------------------------------ */
+.pho_s {
+  width: 95%;
+}
+.ill_s {
+  width: 90%;
+}
+.html_s {
+  width: 95%;
+}
+.css_s {
+  width: 95%;
+}
+.js_s {
+  width: 85%;
+}
+.jq_s {
+  width: 85%;
+}
+
+/* //////////////sec_3 portpolio ////////////////////////////// */
+
+.sec_3 {
+  display: flex;
+  justify-content: space-between;
+}
+.pf_L {
+  width: 43%;
+}
+.pf_R {
+  width: 50%;
+}
+.info_container {
+  position: relative;
+}
+.pf_L > h1 {
+  padding-bottom: 50px;
+}
+.pf_info {
+  padding: 20px;
+}
+.pf_R > img {
+  width: 100%;
+  padding-top: 17%;
+}
+.btn_box {
+  text-align: right;
+}
+.view_btn {
+  width: 150px;
+  height: 50px;
+  border: 1px solid;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.view_btn:hover {
+  background-color: black;
+  color: rgb(248, 48, 82);
+  border-color: black;
+}
+.QR_box {
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #000;
+  box-shadow: 3px 3px 8px 7px rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  top: 40%;
+  right: -33%;
+}
+.QR_open {
+  display: block;
+}
+.QR_box > img {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* //////////////sec_4 contact ////////////////////////////// */
+
+.contact_text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+
+.kakao_talk_1 {
+  width: 50px;
+  transform: translate(-5px, 0px);
+}
+
+.sec4_kakao {
+  transition: all 0.3s;
+}
+
+.sec4_kakao:hover {
+  color: rgb(248, 48, 82);
+}
+
+/* ////////푸터///////////////////////////////// */
+footer {
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  line-height: 50px;
+  padding: 50px;
+}
