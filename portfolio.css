@@ -31,6 +31,7 @@ body {
 .sec_3 {
   /* background-color: rgb(207, 231, 213); */
   border-top: 1px solid;
+  display: flex;
 }
 .sec_4 {
   background-color: rgb(220, 220, 220);
@@ -102,23 +103,20 @@ header {
   min-width: 400px;
 }
 
-.svg_image {
+.top_svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* dasharray(점선 길이), dashoffset(점선 어디부터 시작할지)이랑 
   수치 똑같으면 화면에서 사라짐 */
-  /* stroke-dasharray: 2500;
+  stroke-dasharray: 2500;
   stroke-dashoffset: 0;
-  animation: ani 5s linear; */
+  animation: ani 2s linear;
 }
 @keyframes ani {
   0% {
     stroke-dashoffset: 2500;
-  }
-  50% {
-    /* stroke-dashoffset: 0; */
   }
   100% {
     stroke-dashoffset: 0;
@@ -249,6 +247,9 @@ header {
 }
 .pf_L > h1 {
   padding-bottom: 50px;
+}
+.pf_title {
+  padding: 20px;
 }
 .pf_info {
   padding: 20px;
